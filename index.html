@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPlus Care | Advanced Hospital Services</title>
+    <meta name="description" content="HealthPlus Care offers modern diagnostics, specialist doctors, emergency support, and easy appointment booking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="brand-block">
+            <span class="brand-dot"></span>
+            <div>
+                <p class="brand-name">HealthPlus Care</p>
+                <p class="brand-tag">Compassion with Precision</p>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
+
+        <nav id="primaryNav" class="primary-nav">
+            <a href="#home">Home</a>
+            <a href="#specialties">Specialties</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#library">Health Library</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="tel:+911140554055" class="pill emergency-pill">Emergency 24x7</a>
+            <button class="pill cta-pill" data-open-appointment="true">Book Appointment</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Multi-specialty Healthcare Network</p>
+                <h1>Advanced Treatment, Trusted Doctors, Faster Recovery</h1>
+                <p>
+                    From preventive wellness to critical care, HealthPlus Care combines modern technology,
+                    highly experienced consultants, and patient-first support.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" data-open-appointment="true">Schedule Consultation</button>
+                    <a href="#doctors" class="btn btn-ghost">Find a Specialist</a>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <h2>Why Patients Choose Us</h2>
+                <ul>
+                    <li>1200+ Specialist Doctors</li>
+                    <li>40+ Clinical Departments</li>
+                    <li>24/7 Emergency and Trauma Unit</li>
+                    <li>Robotic and Minimally Invasive Surgery</li>
+                </ul>
+                <a href="#specialties" class="panel-link">Explore all specialties</a>
+            </div>
+        </section>
+
+        <section class="quick-actions section-shell">
+            <button class="action-card" data-target="#specialties">
+                <h3>Explore Specialties</h3>
+                <p>Cardiac, neuro, oncology, orthopedics, and more.</p>
+            </button>
+            <button class="action-card" data-target="#doctors">
+                <h3>Meet Our Doctors</h3>
+                <p>Search care teams by expertise and availability.</p>
+            </button>
+            <button class="action-card" data-target="#library">
+                <h3>Read Health Guides</h3>
+                <p>Practical articles for prevention and recovery.</p>
+            </button>
+            <button class="action-card" data-target="#contact">
+                <h3>Talk to Care Team</h3>
+                <p>Fast callback support for any healthcare query.</p>
+            </button>
+        </section>
+
+        <section class="section-shell" id="specialties">
+            <div class="section-head">
+                <p class="eyebrow">Institutes & Departments</p>
+                <h2>Comprehensive Clinical Specialties</h2>
+            </div>
+            <div class="specialty-grid">
+                <article class="specialty-card" data-topic="cardiac-care">
+                    <h3>Cardiac Sciences</h3>
+                    <p>Heart failure, angioplasty, rhythm disorder and preventive cardiology.</p>
+                    <button class="text-btn read-topic">Read Details</button>
+                </article>
+                <article class="specialty-card" data-topic="neurosciences">
+                    <h3>Neurosciences</h3>
+                    <p>Stroke, epilepsy, spine disorders, and neuro-rehabilitation support.</p>
+                    <button class="text-btn read-topic">Read Details</button>
+                </article>
+                <article class="specialty-card" data-topic="oncology">
+                    <h3>Cancer Care</h3>
+                    <p>Surgical, medical, and radiation oncology with tumor board planning.</p>
+                    <button class="text-btn read-topic">Read Details</button>
+                </article>
+                <article class="specialty-card" data-topic="orthopedics">
+                    <h3>Orthopedics & Joint Care</h3>
+                    <p>Sports injuries, arthritis management, and robotic joint replacement.</p>
+                    <button class="text-btn read-topic">Read Details</button>
+                </article>
+                <article class="specialty-card" data-topic="mother-child">
+                    <h3>Mother & Child Health</h3>
+                    <p>High-risk pregnancy, NICU, pediatric and vaccination services.</p>
+                    <button class="text-btn read-topic">Read Details</button>
+                </article>
+                <article class="specialty-card" data-topic="transplants">
+                    <h3>Liver & Kidney Transplant</h3>
+                    <p>End-to-end pre-transplant evaluation and post-transplant recovery plans.</p>
+                    <button class="text-btn read-topic">Read Details</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell doctors" id="doctors">
+            <div class="section-head">
+                <p class="eyebrow">Clinical Leadership</p>
+                <h2>Featured Specialists</h2>
+            </div>
+
+            <div class="doctor-filter" role="tablist" aria-label="Doctor departments">
+                <button class="filter-btn active" data-doctor-filter="all">All</button>
+                <button class="filter-btn" data-doctor-filter="cardiology">Cardiology</button>
+                <button class="filter-btn" data-doctor-filter="oncology">Oncology</button>
+                <button class="filter-btn" data-doctor-filter="neuro">Neurosciences</button>
+            </div>
+
+            <div class="doctor-grid" id="doctorGrid">
+                <article class="doctor-card" data-category="cardiology">
+                    <h3>Dr. Rohan Mehta</h3>
+                    <p class="doctor-role">Senior Interventional Cardiologist</p>
+                    <p>20+ years | Angioplasty, complex stenting, heart failure care.</p>
+                    <button class="text-btn read-doctor" data-topic="doctor-rohan">View Profile</button>
+                </article>
+                <article class="doctor-card" data-category="oncology">
+                    <h3>Dr. Aditi Sharma</h3>
+                    <p class="doctor-role">Consultant Medical Oncologist</p>
+                    <p>15+ years | Targeted therapies, breast and lung cancer protocols.</p>
+                    <button class="text-btn read-doctor" data-topic="doctor-aditi">View Profile</button>
+                </article>
+                <article class="doctor-card" data-category="neuro">
+                    <h3>Dr. Vivek Arora</h3>
+                    <p class="doctor-role">Director, Neurosurgery</p>
+                    <p>18+ years | Brain tumor surgery, minimally invasive spine care.</p>
+                    <button class="text-btn read-doctor" data-topic="doctor-vivek">View Profile</button>
+                </article>
+                <article class="doctor-card" data-category="cardiology">
+                    <h3>Dr. Isha Kapoor</h3>
+                    <p class="doctor-role">Cardiac Electrophysiologist</p>
+                    <p>12+ years | Pacemaker, arrhythmia mapping, ablation procedures.</p>
+                    <button class="text-btn read-doctor" data-topic="doctor-isha">View Profile</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell plans" id="plans">
+            <div class="section-head">
+                <p class="eyebrow">Preventive Programs</p>
+                <h2>Health Check Packages</h2>
+            </div>
+
+            <div class="plan-grid">
+                <article class="plan-card" data-plan="basic">
+                    <h3>Essential Check</h3>
+                    <p class="plan-price">₹2,499</p>
+                    <ul>
+                        <li>Blood profile + HbA1c</li>
+                        <li>Liver and kidney panel</li>
+                        <li>Doctor tele-consultation</li>
+                    </ul>
+                    <button class="btn btn-secondary select-plan">Select Package</button>
+                </article>
+                <article class="plan-card" data-plan="advanced">
+                    <h3>Advanced Cardio Check</h3>
+                    <p class="plan-price">₹5,999</p>
+                    <ul>
+                        <li>ECG + Echo + TMT</li>
+                        <li>Lipid and thyroid profile</li>
+                        <li>Dietician consultation</li>
+                    </ul>
+                    <button class="btn btn-secondary select-plan">Select Package</button>
+                </article>
+                <article class="plan-card" data-plan="executive">
+                    <h3>Executive Full Body</h3>
+                    <p class="plan-price">₹10,999</p>
+                    <ul>
+                        <li>Whole body screening</li>
+                        <li>Cancer marker panel</li>
+                        <li>Consultation with physician</li>
+                    </ul>
+                    <button class="btn btn-secondary select-plan">Select Package</button>
+                </article>
+            </div>
+            <p id="planOutput" class="inline-feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="section-shell library" id="library">
+            <div class="section-head">
+                <p class="eyebrow">Patient Education</p>
+                <h2>Health Library</h2>
+            </div>
+
+            <div class="library-grid">
+                <article class="library-card" data-topic="article-heart">
+                    <h3>Early Signs of Heart Disease</h3>
+                    <p>Understand warning signs and when to seek immediate medical help.</p>
+                    <button class="text-btn read-topic">Read Article</button>
+                </article>
+                <article class="library-card" data-topic="article-diabetes">
+                    <h3>Managing Diabetes Daily</h3>
+                    <p>Simple lifestyle, meal, and monitoring habits for better sugar control.</p>
+                    <button class="text-btn read-topic">Read Article</button>
+                </article>
+                <article class="library-card" data-topic="article-stroke">
+                    <h3>Stroke: Golden Hour Response</h3>
+                    <p>Know FAST symptoms and why quick action saves brain function.</p>
+                    <button class="text-btn read-topic">Read Article</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell faq" id="faq">
+            <div class="section-head">
+                <p class="eyebrow">Support</p>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <article class="faq-item">
+                    <button class="faq-question">How can I book an appointment quickly?</button>
+                    <p class="faq-answer">Use the appointment form on this page, select department and time slot, then submit. Our team confirms your booking by call/SMS.</p>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question">Do you provide emergency services 24x7?</button>
+                    <p class="faq-answer">Yes. Emergency and trauma care is available 24x7 with dedicated ambulance and rapid response team.</p>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question">Can I get online consultation?</button>
+                    <p class="faq-answer">Yes, tele-consultation is available for follow-ups and selected first-time consultations depending on specialty.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell appointment" id="appointment">
+            <div class="section-head">
+                <p class="eyebrow">Book Visit</p>
+                <h2>Appointment Request</h2>
+            </div>
+
+            <form id="appointmentForm" class="form-grid">
+                <label>
+                    Full Name
+                    <input type="text" id="patientName" placeholder="Enter full name" required>
+                </label>
+                <label>
+                    Mobile Number
+                    <input type="tel" id="patientPhone" placeholder="10-digit number" required>
+                </label>
+                <label>
+                    Department
+                    <select id="department" required>
+                        <option value="">Select department</option>
+                        <option>Cardiology</option>
+                        <option>Oncology</option>
+                        <option>Neurosciences</option>
+                        <option>Orthopedics</option>
+                        <option>Pediatrics</option>
+                    </select>
+                </label>
+                <label>
+                    Preferred Date
+                    <input type="date" id="appointmentDate" required>
+                </label>
+                <label>
+                    Preferred Time
+                    <select id="appointmentTime" required>
+                        <option value="">Choose slot</option>
+                        <option>09:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>01:00 PM</option>
+                        <option>04:00 PM</option>
+                        <option>06:00 PM</option>
+                    </select>
+                </label>
+                <label>
+                    Notes
+                    <textarea id="appointmentNotes" rows="3" placeholder="Symptoms or query"></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary">Request Appointment</button>
+                <p id="appointmentMsg" class="inline-feedback" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="section-shell contact" id="contact">
+            <div class="section-head">
+                <p class="eyebrow">Contact Us</p>
+                <h2>Get in Touch with Care Team</h2>
+            </div>
+
+            <form id="contactForm" class="form-grid compact">
+                <label>
+                    Name
+                    <input type="text" id="name" placeholder="Your Name">
+                </label>
+                <label>
+                    Email
+                    <input type="email" id="email" placeholder="Your Email">
+                </label>
+                <label class="full-row">
+                    Message
+                    <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                </label>
+                <button type="submit" class="btn btn-secondary">Send Message</button>
+                <p id="formMsg" class="inline-feedback" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p class="brand-name">HealthPlus Care</p>
+            <p>Trusted multi-specialty care with patient-centered outcomes.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#specialties">Specialties</a>
+            <a href="#library">Health Library</a>
+            <a href="#faq">FAQs</a>
+            <a href="#contact">Support</a>
+        </div>
+        <p>©️ 2026 HealthPlus Care. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <div id="contentModal" class="modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button id="closeModal" class="close-modal" aria-label="Close">✕</button>
+            <h3 id="modalTitle"></h3>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
